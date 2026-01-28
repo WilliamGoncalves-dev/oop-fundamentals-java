@@ -15,6 +15,11 @@ public class ContaPoupanca extends ContaBancaria{
     }
 
     @Override
+    public void exibirSaldo() {
+        System.out.println("O saldo atual da conta é de: " + getSaldo());
+    }
+
+    @Override
     protected double getSaldoInicial() {
         return 50;
     }
